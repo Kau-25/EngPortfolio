@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM-Controlled Autonomous Drone — Kaushik Saravanan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="../index.html"><span class="glyph">KS</span> KAUSHIK&nbsp;SARAVANAN</a>
+    <nav class="nav">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="https://github.com/Kau-25" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<div class="project-hero">
+  <div class="wrap">
+    <a class="back-link" href="../index.html#work">← All projects</a>
+    <div class="project-hero-img">
+      <img src="../images/drone-1.jpg" alt="LLM-controlled autonomous quadcopter" onerror="this.style.display='none'">
+      <div class="shot-ph"><span class="ico">▣</span><span class="fn">images/drone-1.jpg</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="project-body">
+  <div class="wrap project-layout">
+    <div class="project-main">
+      <h1 class="project-title">LLM-Controlled Autonomous Drone</h1>
+      <p class="project-role">Flight controls · onboard perception · natural-language command</p>
+
+      <h2 class="project-section-head">Overview</h2>
+      <p>Built and configured a quadcopter on a Matek F405-WMN flight controller running ArduPilot; calibrated sensors and flew an autonomous 3-waypoint mission inside a geofence.</p>
+
+      <h2 class="project-section-head">What I built</h2>
+      <ul class="project-list">
+        <li>Built and configured a quadcopter on a Matek F405-WMN flight controller running ArduPilot; calibrated sensors and flew an autonomous 3-waypoint mission inside a geofence.</li>
+        <li>Streamed live video from a Raspberry Pi Zero W to an AWS server running YOLO object detection over a Tailscale VPN for real-time onboard perception.</li>
+        <li>Wrote an MCP server letting an LLM interface with the flight controller over MAVLink — setting flight parameters and modes, and commanding arm, takeoff, and disarm.</li>
+      </ul>
+    </div>
+
+    <aside class="project-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-label">Stack</div>
+        <div class="stack">
+          <span class="chip">ArduPilot</span>
+          <span class="chip">MAVLink</span>
+          <span class="chip">Matek F405</span>
+          <span class="chip">Raspberry Pi</span>
+          <span class="chip">AWS</span>
+          <span class="chip">YOLO</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <h2>Let&rsquo;s build something.</h2>
+    <p class="lead">Open to robotics, embedded, and hardware internships.</p>
+    <div class="foot-links">
+      <a href="mailto:tksmail@gmail.com">✉ tksmail@gmail.com</a>
+      <a href="tel:3104216568">☎ 310-421-6568</a>
+      <a href="https://www.linkedin.com/in/kaushiksara" target="_blank" rel="noopener">in / kaushiksara ↗</a>
+      <a href="https://github.com/Kau-25" target="_blank" rel="noopener">gh / Kau-25 ↗</a>
+    </div>
+    <div class="foot-base"><span>Kaushik Saravanan</span><span>Torrance, CA · USA</span></div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=Math.min(i*60,240)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCN3D Moveo Robotic Arm — Kaushik Saravanan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="../index.html"><span class="glyph">KS</span> KAUSHIK&nbsp;SARAVANAN</a>
+    <nav class="nav">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="https://github.com/Kau-25" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<div class="project-hero">
+  <div class="wrap">
+    <a class="back-link" href="../index.html#work">← All projects</a>
+    <div class="project-hero-img">
+      <img src="../images/arm-1.jpg" alt="6-axis BCN3D Moveo robotic arm" onerror="this.style.display='none'">
+      <div class="shot-ph"><span class="ico">▣</span><span class="fn">images/arm-1.jpg</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="project-body">
+  <div class="wrap project-layout">
+    <div class="project-main">
+      <h1 class="project-title">BCN3D Moveo Robotic Arm</h1>
+      <p class="project-role">Mechanical build · assembly · makerspace fabrication</p>
+
+      <h2 class="project-section-head">Overview</h2>
+      <p>Built a full-scale 6-axis BCN3D Moveo robotic arm from the open-source design, fabricating and assembling every component in the makerspace.</p>
+
+      <h2 class="project-section-head">What I built</h2>
+      <ul class="project-list">
+        <li>Built a 6-axis BCN3D Moveo robotic arm from the open-source design, fabricating and 3D-printing parts in the makerspace.</li>
+        <li>Assembled the arm's structure and joints and integrated its motors and wiring.</li>
+        <li>Used the build to teach robotics and assembly fundamentals to Zotbotics members.</li>
+      </ul>
+    </div>
+
+    <aside class="project-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-label">Stack</div>
+        <div class="stack">
+          <span class="chip">6-axis</span>
+          <span class="chip">Steppers / Servos</span>
+          <span class="chip">3D Printing</span>
+          <span class="chip">CAD</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <h2>Let&rsquo;s build something.</h2>
+    <p class="lead">Open to robotics, embedded, and hardware internships.</p>
+    <div class="foot-links">
+      <a href="mailto:tksmail@gmail.com">✉ tksmail@gmail.com</a>
+      <a href="tel:3104216568">☎ 310-421-6568</a>
+      <a href="https://www.linkedin.com/in/kaushiksara" target="_blank" rel="noopener">in / kaushiksara ↗</a>
+      <a href="https://github.com/Kau-25" target="_blank" rel="noopener">gh / Kau-25 ↗</a>
+    </div>
+    <div class="foot-base"><span>Kaushik Saravanan</span><span>Torrance, CA · USA</span></div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=Math.min(i*60,240)+'ms';io.observe(el)});
+</script>
+</body>
+</html>
